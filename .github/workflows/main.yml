@@ -1,0 +1,27 @@
+- name: Robot Framework
+  # You may pin to the exact commit or the version.
+  # uses: joonvena/robotframework-docker-action@3e8b84bd3e3a82b9dc854cf47c82a768f740c14d
+  uses: joonvena/robotframework-docker-action@v1.1
+  with:
+    # Shared memory that Docker container is allowed to use
+    allowed_shared_memory: # default is 1g
+    # Browser to use
+    browser: # default is chrome
+    # Execute tests in parallel
+    robot_threads: # default is 1
+    # Extra settings for parallel execution. https://github.com/mkorpela/pabot#command-line-options
+    pabot_options: # default is 
+    # Extra options for robot command
+    robot_options: # default is 
+    # Color depth of the virtual screen
+    screen_color_depth: # default is 24
+    # Height of the virtual screen
+    screen_height: # default is 1080
+    # Width of the virtual screen
+    screen_width: # default is 1920
+    # Directory where Robot tests are located in the repository
+    robot_tests_dir: # default is robot_tests
+    # Where will the report from test be saved
+    robot_reports_dir: # default is reports
+    # The docker image which will be used to execute the tests
+    robot_runner_image: # default is ppodgorsek/robot-framework:latest
