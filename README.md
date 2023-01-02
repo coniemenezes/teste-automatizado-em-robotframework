@@ -21,4 +21,29 @@ git branch -M main
 git push -uf origin main
 ```
 
-Já é um profissional? Basta editar este README.md e torná-lo seu. 
+## Já é um profissional? Basta editar este README.md e torná-lo seu. 
+
+## Configuração do projeto
+>Robot framework é construído com Python, portanto, é necessário que tenhas a última versão desta tecnologia instalada em sua máquina e pode ser encontrado através na página oficial do Python.
+
+## A instalação do framework e suas bibliotecas auxiliares é feita através do pip, gerenciador de bibliotecas nativo do Python. Proceda com o comando abaixo:
+```
+$ pip install robotframework
+```
+>E verifique se a instalação ocorreu corretamente:
+```
+$ robot --version
+```
+## A seguir, proceda com a instalação das bibliotecas abaixo, através do pip:
+```
+RequestsLibrary
+Robotframework-jsonlibrary
+```
+## Execução do projeto
+>Para executar os scripts, execute o comando abaixo via terminal estando dentro do diretório raiz do projeto, e passando como argumentos o diretório onde serão inseridos os relatórios e logs da execução e o diretório onde encontram-se os scripts de teste.
+```
+$ robot -d ./Reports  tests/
+```
+## Padrões de projeto e boas práticas
+>Para trabalhar em um projeto com Robot Framework é fortemente recomendado que o programador leia constantemente sua documentação, e esteja atento aos padrões de projeto do Python, tecnologia utilizada para implementação do framework.
+>Lembre-se sempre que o objetivo desta abordagem é construir scripts simples e legíveis. Toda complexidade adicionada ao projeto deve possuir um motivo forte e clara para existir.
